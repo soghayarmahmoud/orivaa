@@ -92,12 +92,12 @@ export default function Support() {
       />
 
       {/* Main Sponsor Card */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         <SponsorCard />
       </SectionWrapper>
 
       {/* Ways to Support */}
-      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -105,10 +105,10 @@ export default function Support() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Ways to Support
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
+          <p className="text-xl text-gray-600">
             There are many ways to contribute to our mission
           </p>
         </motion.div>
@@ -121,13 +121,13 @@ export default function Support() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-900 rounded-xl p-8 border border-gray-200 dark:border-gray-800"
+              className="bg-white rounded-xl p-8 border border-gray-200"
             >
               <div className="text-5xl mb-4">{way.icon}</div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 {way.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
+              <p className="text-gray-600 mb-6">
                 {way.description}
               </p>
               <div className="space-y-2">
@@ -135,7 +135,7 @@ export default function Support() {
                   <a
                     key={link.label}
                     href={link.url}
-                    className="inline-block text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-400 font-semibold transition-colors"
+                    className="inline-block text-red-600 hover:text-red-700 font-semibold transition-colors"
                   >
                     {link.label} →
                   </a>
@@ -147,7 +147,7 @@ export default function Support() {
       </SectionWrapper>
 
       {/* Sponsorship Tiers */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -155,10 +155,10 @@ export default function Support() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Sponsorship Tiers
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
+          <p className="text-xl text-gray-600">
             Find the perfect way to support our mission
           </p>
         </motion.div>
@@ -174,13 +174,13 @@ export default function Support() {
               className={`rounded-2xl p-8 border transition-all ${
                 tier.featured
                   ? 'bg-gradient-to-br from-red-600 to-red-700 text-white border-red-600 shadow-xl scale-105'
-                  : 'bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-gray-900 dark:text-white'
+                  : 'bg-white border-gray-200 text-gray-900'
               }`}
             >
               <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
               <div className="mb-6">
                 <div className="text-4xl font-bold">{tier.amount}</div>
-                <div className={tier.featured ? 'text-red-100' : 'text-gray-600 dark:text-gray-400'}>
+                <div className={tier.featured ? 'text-red-100' : 'text-gray-600'}>
                   {tier.frequency}
                 </div>
               </div>
@@ -209,7 +209,7 @@ export default function Support() {
       </SectionWrapper>
 
       {/* Impact of Support */}
-      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -217,7 +217,7 @@ export default function Support() {
           viewport={{ once: true }}
           className="space-y-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
             Your Support Makes an Impact
           </h2>
 
@@ -245,13 +245,13 @@ export default function Support() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-gray-900 rounded-xl p-8 text-center border border-gray-200 dark:border-gray-800"
+                className="bg-white rounded-xl p-8 text-center border border-gray-200"
               >
                 <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-gray-600">
                   {item.description}
                 </p>
               </motion.div>
@@ -261,7 +261,7 @@ export default function Support() {
       </SectionWrapper>
 
       {/* FAQ / Transparency */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -269,7 +269,7 @@ export default function Support() {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
             Support & Transparency
           </h2>
 
@@ -298,12 +298,12 @@ export default function Support() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="bg-gray-50 dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-800"
+                className="bg-gray-50 rounded-lg p-6 border border-gray-200"
               >
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
                   {item.q}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-gray-600">
                   {item.a}
                 </p>
               </motion.div>
@@ -313,7 +313,7 @@ export default function Support() {
       </SectionWrapper>
 
       {/* Final CTA */}
-      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -321,10 +321,10 @@ export default function Support() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Ready to Make an Impact?
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Every contribution, big or small, makes a difference in our mission to build impactful digital solutions for communities.
           </p>
           <Button href="https://github.com/sponsors/soghayarmahmoud" variant="primary" size="lg">
@@ -335,3 +335,4 @@ export default function Support() {
     </div>
   );
 }
+

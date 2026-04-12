@@ -66,7 +66,7 @@ export default function Impact() {
       />
 
       {/* Impact Stats */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {impactMetrics.map((metric, index) => (
             <motion.div
@@ -75,15 +75,15 @@ export default function Impact() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950/30 dark:to-red-900/20 rounded-xl p-8 border border-red-200 dark:border-red-900/50"
+              className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-8 border border-red-200"
             >
               <div className="text-4xl md:text-5xl font-bold text-red-600 mb-3">
                 {metric.number}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
                 {metric.label}
               </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="text-sm text-gray-700 leading-relaxed">
                 {metric.description}
               </p>
             </motion.div>
@@ -92,7 +92,7 @@ export default function Impact() {
       </SectionWrapper>
 
       {/* Impact Stories */}
-      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -100,10 +100,10 @@ export default function Impact() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Impact Stories
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
+          <p className="text-xl text-gray-600">
             See how our projects are making a real difference
           </p>
         </motion.div>
@@ -116,16 +116,16 @@ export default function Impact() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-900 rounded-xl p-8 border border-gray-200 dark:border-gray-800"
+              className="bg-white rounded-xl p-8 border border-gray-200"
             >
               <div className="text-4xl mb-4">{story.icon}</div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 {story.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+              <p className="text-gray-600 mb-4 leading-relaxed">
                 {story.description}
               </p>
-              <div className="inline-block bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 px-4 py-2 rounded-full font-semibold">
+              <div className="inline-block bg-red-50 text-red-700 px-4 py-2 rounded-full font-semibold">
                 {story.metric}
               </div>
             </motion.div>
@@ -134,7 +134,7 @@ export default function Impact() {
       </SectionWrapper>
 
       {/* Our Approach */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -142,7 +142,7 @@ export default function Impact() {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
             How We Create Impact
           </h2>
 
@@ -183,10 +183,10 @@ export default function Impact() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <p className="text-gray-600">
                     {item.description}
                   </p>
                 </div>
@@ -197,18 +197,18 @@ export default function Impact() {
       </SectionWrapper>
 
       {/* Call to Action */}
-      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-white dark:bg-gray-900 rounded-2xl p-12 text-center border border-gray-200 dark:border-gray-800"
+          className="bg-white rounded-2xl p-12 text-center border border-gray-200"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Be Part of Our Impact
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Join us in creating digital solutions that make a real difference. Whether through contributing, supporting, or using our applications, you can be part of this mission.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -224,3 +224,4 @@ export default function Impact() {
     </div>
   );
 }
+

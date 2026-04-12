@@ -40,3 +40,4 @@ export default function SponsorCard() {
     </motion.div>
   );
 }
+

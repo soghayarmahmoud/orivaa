@@ -26,12 +26,12 @@ export default function ProjectCard({
       transition={{ delay: index * 0.1, duration: 0.5 }}
       viewport={{ once: true }}
       whileHover={{ y: -8, boxShadow: '0 20px 40px rgba(198, 40, 40, 0.15)' }}
-      className="bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800 hover:border-red-600 transition-all duration-300"
+      className="bg-white rounded-xl p-6 border border-gray-200 hover:border-red-600 transition-all duration-300"
     >
-      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+      <h3 className="text-xl font-bold text-gray-900 mb-2">
         {title}
       </h3>
-      <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed">
+      <p className="text-gray-600 text-sm mb-4 leading-relaxed">
         {description}
       </p>
 
@@ -40,7 +40,7 @@ export default function ProjectCard({
         {tags.map((tag) => (
           <span
             key={tag}
-            className="bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 text-xs px-3 py-1 rounded-full font-medium"
+            className="bg-red-50 text-red-700 text-xs px-3 py-1 rounded-full font-medium"
           >
             {tag}
           </span>
@@ -63,3 +63,4 @@ export default function ProjectCard({
     </motion.div>
   );
 }
+

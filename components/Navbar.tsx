@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
@@ -11,14 +12,16 @@ export default function Navbar() {
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Projects', href: '/projects' },
+    { label: 'Team', href: '/team' },
     { label: 'Impact', href: '/impact' },
+    { label: 'Join Us', href: '/join' },
     { label: 'Support', href: '/support' },
     { label: 'Contact', href: '/contact' },
   ];
 
   return (
     <motion.nav
-      className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm dark:bg-black/95 dark:border-gray-800"
+      className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.3 }}
@@ -28,21 +31,27 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2 text-2xl font-bold text-red-600 hover:text-red-700 transition-colors"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
-            <span className="bg-red-600 text-white w-8 h-8 rounded-lg flex items-center justify-center text-lg">
-              O
-            </span>
-            Oriva
+            <div className="w-8 h-8 relative">
+              <Image
+                src="/imgs/oriva.png"
+                alt="Oriva Foundation Logo"
+                width={32}
+                height={32}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <span className="text-xl font-bold text-red-600">Oriva</span>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-red-600 transition-colors font-medium dark:text-gray-300 dark:hover:text-red-500"
+                className="text-gray-700 hover:text-red-600 transition-colors font-medium text-sm"
               >
                 {item.label}
               </Link>
@@ -52,18 +61,18 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden flex flex-col gap-1.5 w-6 h-6"
+            className="lg:hidden flex flex-col gap-1.5 w-6 h-6"
           >
-            <div className="w-full h-0.5 bg-gray-800 dark:bg-gray-200 rounded transition-all" />
-            <div className="w-full h-0.5 bg-gray-800 dark:bg-gray-200 rounded transition-all" />
-            <div className="w-full h-0.5 bg-gray-800 dark:bg-gray-200 rounded transition-all" />
+            <div className="w-full h-0.5 bg-gray-800 rounded transition-all" />
+            <div className="w-full h-0.5 bg-gray-800 rounded transition-all" />
+            <div className="w-full h-0.5 bg-gray-800 rounded transition-all" />
           </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <motion.div
-            className="md:hidden pb-4 border-t border-gray-100 dark:border-gray-800"
+            className="lg:hidden pb-4 border-t border-gray-100"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
@@ -72,7 +81,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-gray-700 hover:text-red-600 transition-colors dark:text-gray-300"
+                className="block py-2 text-gray-700 hover:text-red-600 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
@@ -84,3 +93,4 @@ export default function Navbar() {
     </motion.nav>
   );
 }
+

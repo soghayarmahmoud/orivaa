@@ -73,7 +73,7 @@ export default function Contact() {
       />
 
       {/* Contact Methods */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -81,10 +81,10 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Connect With Us
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
+          <p className="text-xl text-gray-600">
             Choose your preferred way to reach out
           </p>
         </motion.div>
@@ -100,13 +100,13 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950/30 dark:to-red-900/20 rounded-xl p-6 text-center border border-red-200 dark:border-red-900/50 hover:shadow-lg transition-all"
+              className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 text-center border border-red-200 hover:shadow-lg transition-all"
             >
               <div className="text-4xl mb-3">{option.icon}</div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">
                 {option.title}
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-gray-600">
                 {option.value}
               </p>
             </motion.a>
@@ -115,7 +115,7 @@ export default function Contact() {
       </SectionWrapper>
 
       {/* Contact Form */}
-      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -123,10 +123,10 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Send us a Message
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+            <p className="text-lg text-gray-600 mb-6">
               We're usually pretty quick to respond. Give us some details about what you'd like to discuss, and we'll get back to you as soon as possible.
             </p>
 
@@ -148,10 +148,10 @@ export default function Contact() {
                 <div key={item.title} className="flex gap-3">
                   <span className="text-red-600 text-2xl">✓</span>
                   <div>
-                    <h4 className="font-bold text-gray-900 dark:text-white">
+                    <h4 className="font-bold text-gray-900">
                       {item.title}
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <p className="text-gray-600">
                       {item.description}
                     </p>
                   </div>
@@ -165,7 +165,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white dark:bg-gray-900 rounded-2xl p-8 border border-gray-200 dark:border-gray-800 shadow-lg"
+            className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg"
           >
             {submitted ? (
               <motion.div
@@ -174,10 +174,10 @@ export default function Contact() {
                 className="h-full flex flex-col items-center justify-center text-center py-20"
               >
                 <div className="text-6xl mb-4">✓</div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   Message Received!
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <p className="text-gray-600 mb-4">
                   Thank you for reaching out. We'll get back to you soon!
                 </p>
                 <div className="text-red-600 text-lg">
@@ -189,7 +189,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-semibold text-gray-900 dark:text-white mb-2"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
                   >
                     Full Name
                   </label>
@@ -200,7 +200,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-red-600 transition-colors"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 bg-white text-gray-900 focus:outline-none focus:border-red-600 transition-colors"
                     placeholder="Your name"
                   />
                 </div>
@@ -208,7 +208,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-semibold text-gray-900 dark:text-white mb-2"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
                   >
                     Email Address
                   </label>
@@ -219,7 +219,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-red-600 transition-colors"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 bg-white text-gray-900 focus:outline-none focus:border-red-600 transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -227,7 +227,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-semibold text-gray-900 dark:text-white mb-2"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
                   >
                     Message
                   </label>
@@ -238,7 +238,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-red-600 transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 bg-white text-gray-900 focus:outline-none focus:border-red-600 transition-colors resize-none"
                     placeholder="Tell us more about what you'd like to discuss..."
                   />
                 </div>
@@ -253,7 +253,7 @@ export default function Contact() {
       </SectionWrapper>
 
       {/* Location Info */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -261,10 +261,10 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Global Community
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             We're a distributed team working with communities around the world. No matter where you are, we're here to connect and collaborate.
           </p>
         </motion.div>
@@ -272,3 +272,4 @@ export default function Contact() {
     </div>
   );
 }
+

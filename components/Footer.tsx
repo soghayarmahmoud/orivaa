@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white mt-20 dark:bg-black border-t dark:border-gray-800">
+    <footer className="bg-gray-900 text-white mt-20 border-t">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About */}
@@ -31,13 +31,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/impact" className="hover:text-red-500 transition-colors">
-                  Impact
+                <Link href="/team" className="hover:text-red-500 transition-colors">
+                  Team
                 </Link>
               </li>
               <li>
-                <Link href="/support" className="hover:text-red-500 transition-colors">
-                  Support
+                <Link href="/impact" className="hover:text-red-500 transition-colors">
+                  Impact
                 </Link>
               </li>
             </ul>
@@ -118,3 +118,4 @@ export default function Footer() {
     </footer>
   );
 }
+

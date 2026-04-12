@@ -46,17 +46,17 @@ export default function HeroSection({
   };
 
   const backgroundClass = {
-    default: 'bg-gradient-to-b from-white via-red-50/30 to-white dark:from-black dark:via-red-950/10 dark:to-black',
-    minimal: 'bg-white dark:bg-black',
-    gradient: 'bg-gradient-to-br from-red-50 via-white to-gray-50 dark:from-red-950/20 dark:via-black dark:to-gray-900/50',
+    default: 'bg-gradient-to-b from-white via-red-50/30 to-white',
+    minimal: 'bg-white',
+    gradient: 'bg-gradient-to-br from-red-50 via-white to-gray-50',
   };
 
   return (
-    <div className={`relative min-h-[600px] md:min-h-screen flex items-center justify-center overflow-hidden ${backgroundClass[backgroundVariant]}`}>
+    <div className="relative min-h-[600px] md:min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white via-red-50/30 to-white">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute -top-40 -right-40 w-80 h-80 bg-red-100 dark:bg-red-900/20 rounded-full blur-3xl opacity-30"
+          className="absolute -top-40 -right-40 w-80 h-80 bg-red-100 rounded-full blur-3xl opacity-30"
           animate={{
             y: [0, 100, 0],
             x: [0, 50, 0],
@@ -68,7 +68,7 @@ export default function HeroSection({
           }}
         />
         <motion.div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-red-100 dark:bg-red-900/20 rounded-full blur-3xl opacity-30"
+          className="absolute -bottom-40 -left-40 w-80 h-80 bg-red-100 rounded-full blur-3xl opacity-30"
           animate={{
             y: [0, -100, 0],
             x: [0, -50, 0],
@@ -102,7 +102,7 @@ export default function HeroSection({
         {/* Title */}
         <motion.h1
           variants={itemVariants}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight tracking-tight"
+          className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tight"
         >
           {title}
         </motion.h1>
@@ -110,7 +110,7 @@ export default function HeroSection({
         {/* Subtitle */}
         <motion.p
           variants={itemVariants}
-          className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
         >
           {subtitle}
         </motion.p>
@@ -145,3 +145,4 @@ export default function HeroSection({
     </div>
   );
 }
+

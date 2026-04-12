@@ -36,9 +36,8 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full`}
-      suppressHydrationWarning
     >
-      <body className="min-h-screen flex flex-col bg-white dark:bg-black antialiased">
+      <body className="min-h-screen flex flex-col bg-white antialiased">
         <Navbar />
         <main className="flex-1">
           {children}
@@ -48,3 +47,4 @@ export default function RootLayout({
     </html>
   );
 }
+

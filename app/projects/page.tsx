@@ -67,7 +67,7 @@ export default function Projects() {
       />
 
       {/* Projects Grid */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         {/* Filters */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">
             Filter by Category
           </h3>
           <div className="flex flex-wrap gap-3">
@@ -85,7 +85,7 @@ export default function Projects() {
               className={`px-4 py-2 rounded-lg font-medium transition-all ${
                 selectedFilter === null
                   ? 'bg-red-600 text-white'
-                  : 'bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
               All
@@ -97,7 +97,7 @@ export default function Projects() {
                 className={`px-4 py-2 rounded-lg font-medium transition-all ${
                   selectedFilter === tag
                     ? 'bg-red-600 text-white'
-                    : 'bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
                 {tag}
@@ -119,7 +119,7 @@ export default function Projects() {
       </SectionWrapper>
 
       {/* Open Source Info */}
-      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -144,17 +144,17 @@ export default function Projects() {
       </SectionWrapper>
 
       {/* Contribute Section */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Want to Contribute?
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl">
             We welcome contributions from developers, designers, and community members. Whether it's fixing bugs, adding features, or improving documentation, there's always something you can help with.
           </p>
           <Button href="/contact" variant="primary" size="lg">
@@ -165,3 +165,4 @@ export default function Projects() {
     </div>
   );
 }
+

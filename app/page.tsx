@@ -55,7 +55,7 @@ export default function Home() {
       />
 
       {/* Featured Projects */}
-      <SectionWrapper id="projects" className="bg-white dark:bg-black">
+      <SectionWrapper id="projects" className="bg-white">
         <div className="mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -63,10 +63,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Featured Projects
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
+            <p className="text-xl text-gray-600 max-w-2xl">
               Discover the innovative digital solutions we've built for the community.
             </p>
           </motion.div>
@@ -88,7 +88,7 @@ export default function Home() {
       </SectionWrapper>
 
       {/* Impact Stats */}
-      <SectionWrapper id="impact" className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper id="impact" className="bg-gradient-to-b from-gray-50 to-white">
         <div className="mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -97,10 +97,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Our Impact
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300">
+            <p className="text-xl text-gray-600">
               Making a tangible difference in the community through technology.
             </p>
           </motion.div>
@@ -113,12 +113,12 @@ export default function Home() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-900 rounded-xl p-6 text-center border border-gray-200 dark:border-gray-800"
+              className="bg-white rounded-xl p-6 text-center border border-gray-200"
             >
               <div className="text-3xl md:text-4xl font-bold text-red-600 mb-2">
                 {stat.number}
               </div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium">
+              <div className="text-gray-600 font-medium">
                 {stat.label}
               </div>
             </motion.div>
@@ -127,7 +127,7 @@ export default function Home() {
       </SectionWrapper>
 
       {/* About Preview */}
-      <SectionWrapper id="about" className="bg-white dark:bg-black">
+      <SectionWrapper id="about" className="bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -135,13 +135,13 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               About Oriva Foundation
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               We are a mission-driven non-profit dedicated to creating Islamic applications and community-driven projects that deliver impactful digital solutions for society.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Our team comprises talented developers, designers, and community advocates working together to build technology that matters.
             </p>
             <Button href="/about" variant="primary" size="lg">
@@ -165,7 +165,7 @@ export default function Home() {
       </SectionWrapper>
 
       {/* Why Choose Us */}
-      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white">
         <div className="mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -174,10 +174,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Why Choose Oriva
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300">
+            <p className="text-xl text-gray-600">
               We combine modern technology with community values
             </p>
           </motion.div>
@@ -206,13 +206,13 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-900 rounded-xl p-8 border border-gray-200 dark:border-gray-800 text-center"
+              className="bg-white rounded-xl p-8 border border-gray-200 text-center"
             >
               <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 {item.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 {item.description}
               </p>
             </motion.div>
@@ -221,23 +221,23 @@ export default function Home() {
       </SectionWrapper>
 
       {/* Sponsor Section */}
-      <SectionWrapper className="bg-white dark:bg-black">
+      <SectionWrapper className="bg-white">
         <SponsorCard />
       </SectionWrapper>
 
       {/* CTA Section */}
-      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+      <SectionWrapper className="bg-gradient-to-b from-gray-50 to-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-white dark:bg-gray-900 rounded-2xl p-12 text-center border border-gray-200 dark:border-gray-800"
+          className="bg-white rounded-2xl p-12 text-center border border-gray-200"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Ready to Make an Impact?
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Join us in building digital solutions that matter. Get in touch with our team today.
           </p>
           <Link href="/contact">
@@ -250,3 +250,4 @@ export default function Home() {
     </div>
   );
 }
+

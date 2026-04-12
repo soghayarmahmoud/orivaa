@@ -27,7 +27,7 @@ export default function Button({
   const variantStyles = {
     primary: 'bg-red-600 text-white hover:bg-red-700 active:scale-95',
     secondary: 'bg-white text-red-600 border-2 border-red-600 hover:bg-red-50 active:scale-95',
-    outline: 'border-2 border-gray-300 text-gray-800 hover:border-red-600 hover:text-red-600 active:scale-95 dark:border-gray-600 dark:text-gray-200 dark:hover:text-red-500',
+    outline: 'border-2 border-gray-300 text-gray-800 hover:border-red-600 hover:text-red-600 active:scale-95',
   };
 
   const sizeStyles = {
@@ -66,3 +66,4 @@ export default function Button({
     </motion.button>
   );
 }
+
