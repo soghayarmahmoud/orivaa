@@ -5,8 +5,8 @@ import SectionWrapper from '@/components/SectionWrapper';
 import Button from '@/components/Button';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faRocket, faLightbulb, faHandshake, faBook, faTarget, faBriefcase, faComment, faGithub } from '@fortawesome/free-solid-svg-icons';
-import { faGithub as faGithubBrand } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe, faRocket, faLightbulb, faHandshake, faBook, faBullseye, faBriefcase, faCommentDots } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Join() {
   return (
@@ -62,7 +62,7 @@ export default function Join() {
               description: 'We invest in our team members through mentorship, training, and opportunities to expand your knowledge.',
             },
             {
-              icon: faTarget,
+              icon: faBullseye,
               title: 'Clear Mission',
               description: 'Work towards a clear, meaningful mission: building Islamic applications and community-driven projects.',
             },
@@ -259,7 +259,7 @@ export default function Join() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-semibold"
               >
-                <FontAwesomeIcon icon={faComment} /> WhatsApp: +201019593092
+                <FontAwesomeIcon icon={faCommentDots} /> WhatsApp: +201019593092
               </a>
               <a
                 href="https://www.linkedin.com/in/elsoghayar/"
@@ -275,7 +275,7 @@ export default function Join() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-semibold"
               >
-                <FontAwesomeIcon icon={faGithubBrand} /> GitHub
+                <FontAwesomeIcon icon={faGithub} /> GitHub
               </a>
             </div>
           </div>

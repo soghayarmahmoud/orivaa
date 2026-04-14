@@ -61,6 +61,12 @@ export const translations = {
       readOurStory: 'Read Our Story',
       readyMakeImpact: 'Ready to Make an Impact?',
       joinBuilding: 'Join us in building digital solutions that matter. Get in touch with our team today.',
+      prayerApp: 'Prayer Times App',
+      prayerAppDesc: 'A comprehensive Islamic application providing accurate prayer times with Quranic features and community engagement.',
+      communityForum: 'Community Forum',
+      communityForumDesc: 'A safe and inclusive platform for community discussions, knowledge sharing, and collaborative problem-solving.',
+      digitalSolutions: 'Digital Solutions Platform',
+      digitalSolutionsDesc: 'An integrated platform delivering innovative digital solutions tailored for social impact and community benefit.',
     },
 
     // About Page
@@ -403,6 +409,12 @@ export const translations = {
       readOurStory: 'اقرأ قصتنا',
       readyMakeImpact: 'هل أنت مستعد لإحداث تأثير؟',
       joinBuilding: 'انضم إلينا في بناء حلول رقمية مهمة. تواصل مع فريقنا اليوم.',
+      prayerApp: 'تطبيق أوقات الصلاة',
+      prayerAppDesc: 'تطبيق إسلامي شامل يوفر أوقات صلاة دقيقة مع ميزات قرآنية والتفاعل المجتمعي.',
+      communityForum: 'منتدى المجتمع',
+      communityForumDesc: 'منصة آمنة وشاملة للنقاشات المجتمعية ومشاركة المعرفة والحل التعاوني للمشاكل.',
+      digitalSolutions: 'منصة الحلول الرقمية',
+      digitalSolutionsDesc: 'منصة متكاملة توفر حلول رقمية مبتكرة مصممة للتأثير الاجتماعي والفائدة المجتمعية.',
     },
 
     // About Page
