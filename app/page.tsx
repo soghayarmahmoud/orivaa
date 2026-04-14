@@ -11,22 +11,22 @@ import { useLanguage } from '@/context/LanguageContext';
 import { getTranslation } from '@/lib/translations';
 import type { Language } from '@/context/LanguageContext';
 
-const featuredProjects = [
+const getFeaturedProjects = (language: Language) => [
   {
-    title: 'Prayer Times App',
-    description: 'A comprehensive Islamic application providing accurate prayer times with Quranic features and community engagement.',
+    title: getTranslation(language, 'home.prayerApp'),
+    description: getTranslation(language, 'home.prayerAppDesc'),
     tags: ['Islamic', 'Mobile', 'React Native'],
     link: 'https://github.com',
   },
   {
-    title: 'Community Forum',
-    description: 'A safe and inclusive platform for community discussions, knowledge sharing, and collaborative problem-solving.',
+    title: getTranslation(language, 'home.communityForum'),
+    description: getTranslation(language, 'home.communityForumDesc'),
     tags: ['Community', 'Web', 'Next.js'],
     link: 'https://github.com',
   },
   {
-    title: 'Digital Solutions Platform',
-    description: 'An integrated platform delivering innovative digital solutions tailored for social impact and community benefit.',
+    title: getTranslation(language, 'home.digitalSolutions'),
+    description: getTranslation(language, 'home.digitalSolutionsDesc'),
     tags: ['Tech', 'Platform', 'AI'],
     link: 'https://github.com',
   },
@@ -82,7 +82,7 @@ export default function Home() {
           </motion.div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {featuredProjects.map((project, index) => (
+          {getFeaturedProjects(language as Language).map((project, index) => (
             <ProjectCard key={project.title} index={index} {...project} />
           ))}
         </div>

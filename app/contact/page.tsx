@@ -6,8 +6,8 @@ import Button from '@/components/Button';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faGithub, faBriefcase, faTwitter } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter as faTwitterBrand } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -59,7 +59,7 @@ export default function Contact() {
       link: 'https://linkedin.com',
     },
     {
-      icon: faTwitterBrand,
+      icon: faTwitter,
       title: 'Twitter',
       value: '@oriva_foundation',
       link: 'https://twitter.com',
