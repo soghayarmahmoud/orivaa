@@ -14,11 +14,12 @@ const registrationSchema = z.object({
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   try {
     await dbConnect();
 
+    const params = await context.params;
     const eventId = params.id;
     const body = await request.json();
 

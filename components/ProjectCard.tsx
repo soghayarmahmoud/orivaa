@@ -10,6 +10,7 @@ interface ProjectCardProps {
   tags: string[];
   link?: string;
   index?: number;
+  images?: string[];
 }
 
 export default function ProjectCard({
@@ -18,6 +19,7 @@ export default function ProjectCard({
   tags,
   link = '#',
   index = 0,
+  images = [],
 }: ProjectCardProps) {
   return (
     <motion.div
@@ -26,14 +28,24 @@ export default function ProjectCard({
       transition={{ delay: index * 0.1, duration: 0.5 }}
       viewport={{ once: true }}
       whileHover={{ y: -8, boxShadow: '0 20px 40px rgba(198, 40, 40, 0.15)' }}
-      className="bg-white rounded-xl p-6 border border-gray-200 hover:border-red-600 transition-all duration-300"
+      className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-red-600 transition-all duration-300"
     >
-      <h3 className="text-xl font-bold text-gray-900 mb-2">
-        {title}
-      </h3>
-      <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-        {description}
-      </p>
+      {images.length > 0 && (
+        <div className="h-56 overflow-hidden">
+          <img
+            src={images[0]}
+            alt={title}
+            className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+          />
+        </div>
+      )}
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-2">
+          {title}
+        </h3>
+        <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+          {description}
+        </p>
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-4">
@@ -60,6 +72,7 @@ export default function ProjectCard({
           <span>→</span>
         </motion.a>
       )}
+      </div>
     </motion.div>
   );
 }

@@ -1,7 +1,7 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
 export interface IEventRegistration extends Document {
-  _id: string;
+  _id: mongoose.Types.ObjectId;
   eventId: mongoose.Types.ObjectId;
   fullName: string;
   email: string;

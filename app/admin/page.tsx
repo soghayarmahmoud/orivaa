@@ -88,13 +88,13 @@ export default function AdminDashboard() {
                 {stat.title}
               </CardTitle>
               <div className={`p-2 rounded-lg ${stat.bgColor}`}>
-                <stat.icon className={`h-4 w-4 ${stat.color}`} />
+                <FontAwesomeIcon icon={stat.icon} className={`h-4 w-4 ${stat.color}`} />
               </div>
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
               <p className="text-xs text-gray-500 mt-1">
-                <TrendingUp className="inline h-3 w-3 mr-1" />
+                <FontAwesomeIcon icon={faArrowUp} className="inline h-3 w-3 mr-1 text-green-500" />
                 +12% from last month
               </p>
             </CardContent>

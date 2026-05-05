@@ -1,7 +1,7 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
 export interface ICourse extends Document {
-  _id: string;
+  _id: mongoose.Types.ObjectId;
   title: string;
   titleAr: string;
   description: string;
