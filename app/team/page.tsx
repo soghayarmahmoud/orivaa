@@ -12,7 +12,7 @@ import type { Language } from '@/context/LanguageContext';
 const teamMembers = [
   {
     name: 'Mahmoud Elsoghayar',
-    role: 'Founder & Lead Developer',
+    role: 'Founder & Project Director',
     bio: 'Passionate about building impactful Islamic applications and community-driven solutions.',
     github: 'soghayarmahmoud',
     linkedin: 'https://www.linkedin.com/in/elsoghayar/',
@@ -21,7 +21,7 @@ const teamMembers = [
   },
   {
     name: 'Mahmoud Abdelrauf',
-    role: 'Full Stack Developer',
+    role: 'Co-Founder & CTO',
     bio: 'Expert in building scalable web applications and modern solutions.',
     github: 'GoldenBoy13420',
     linkedin: 'https://www.linkedin.com/in/mahmoud-abdelrauf/',
@@ -29,15 +29,15 @@ const teamMembers = [
   },
   {
     name: 'Ahmed Mahmoud Mostafa',
-    role: 'Front-end Developer',
+    role: 'General Manager',
     bio: 'Specialized in creating beautiful and responsive user interfaces.',
     github: 'a7medma7moudmostafa',
     linkedin: 'https://www.linkedin.com/in/ahmed-mahmoud-74983a31a/',
     whatsapp: '+20 10 93358794',
   },
   {
-    name: 'Ahmed Shaban',
-    role: 'Back-end Developer',
+    name: 'Ahmed Mahmoud Abdellah',
+    role: 'Head of HR',
     bio: 'Focused on building robust and efficient backend systems.',
     github: 'Lord-shaban',
     linkedin: 'https://www.linkedin.com/in/ahmed-sha-ban-006a24309/',
